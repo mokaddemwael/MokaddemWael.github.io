@@ -4,219 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#126b99">
-<meta name="description" content="Wael Mokaddem — Portfolio en développement, business intelligence, data science et finance.">
+<meta name="description" content="Wael Mokaddem — Développement, Business Intelligence, data science et finance.">
 <title>Wael Mokaddem | Portfolio</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23126b99'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial' font-size='25' font-weight='bold' fill='white'%3EWM%3C/text%3E%3C/svg%3E">
-
 <style>
 :root {
-  --blue: #126b99;
-  --deep: #163b55;
-  --muted: #526b7b;
-  --line: #d4e7f1;
-  --sky: #e8f6ff;
+  --blue:#126b99;
+  --deep:#163b55;
+  --muted:#526b7b;
+  --line:#cfe4f0;
 }
-* { box-sizing: border-box; }
-[hidden] { display: none !important; }
-html { scroll-behavior: smooth; scroll-padding-top: 25px; }
-body {
-  margin: 0;
-  color: var(--deep);
-  background: #f8fcff;
-  font: 16px/1.75 system-ui, -apple-system, "Segoe UI", sans-serif;
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:25px}
+body{
+  margin:0;background:#f8fcff;color:var(--deep);
+  font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif;
 }
-a { color: var(--blue); text-underline-offset: 4px; }
-a:hover { color: #08456a; }
-a:focus-visible, button:focus-visible {
-  outline: 3px solid #126b99;
-  outline-offset: 5px;
+a{color:var(--blue);text-underline-offset:4px}
+a:hover{color:#08456a}
+a:focus-visible,button:focus-visible{
+  outline:3px solid var(--blue);outline-offset:5px;
 }
-button { font: inherit; }
-p { margin: 0 0 16px; }
-.wrap { width: min(1120px, 90%); margin: auto; }
-header {
+button{font:inherit}
+p{margin:0 0 16px}
+img{display:block;max-width:100%}
+.wrap{width:min(1120px,90%);margin:auto}
+header{
   background:
-    radial-gradient(ellipse at 85% 30%, #c6eaff, transparent 60%),
-    radial-gradient(ellipse at 10% 80%, #dcf6fa, transparent 60%),
-    #f3faff;
-  border-bottom: 1px solid var(--line);
+    radial-gradient(ellipse at 85% 25%,#c6eaff,transparent 60%),
+    radial-gradient(ellipse at 10% 85%,#def5fa,transparent 60%),#f3faff;
+  border-bottom:1px solid var(--line);
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-  padding: 24px 0;
+nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0}
+.logo{font-size:1.6rem;font-weight:800;text-decoration:none}
+.nav-right,.nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:20px}
+.nav-links a{font-size:.9rem;font-weight:650;text-decoration:none}
+.languages{display:flex;gap:4px;padding:4px;background:white;border:1px solid var(--line);border-radius:30px}
+.languages button{
+  min-width:44px;min-height:40px;border:0;border-radius:25px;
+  background:transparent;color:var(--blue);cursor:pointer;font-weight:700;
 }
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-decoration: none;
-  letter-spacing: -.04em;
+.languages button[aria-pressed="true"]{background:var(--blue);color:white}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;align-items:center;gap:60px;padding:55px 0 75px}
+.badge{display:inline-block;padding:7px 15px;border:1px solid #b5d5e7;border-radius:30px;background:#ffffffc9;font-size:.85rem;font-weight:650}
+h1{font-size:clamp(2.8rem,6vw,4.7rem);line-height:1.1;letter-spacing:-.05em;margin:25px 0}
+h1 span{color:var(--blue)}
+.intro{font-size:1.1rem;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.button{
+  display:inline-block;padding:11px 22px;background:var(--blue);color:white;
+  border:1px solid var(--blue);border-radius:28px;font-weight:650;text-decoration:none;
 }
-.nav-right, .nav-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.button:hover{background:#0b527a;color:white}
+.button.light{background:white;color:var(--blue);border-color:#bdd9e9}
+.grade-banner{
+  display:flex;align-items:center;gap:18px;margin-top:28px;
+  padding:18px 21px;border:1px solid #b7d9ed;border-radius:20px;background:#ffffffc9;
 }
-.nav-links a { font-size: .9rem; font-weight: 650; text-decoration: none; }
-.languages {
-  display: flex;
-  gap: 4px;
-  padding: 4px;
-  border: 1px solid #b9d8e9;
-  border-radius: 30px;
-  background: white;
+.grade-banner strong{font-size:2rem;line-height:1;color:var(--blue);white-space:nowrap}
+.grade-banner span{font-size:.9rem;line-height:1.5}
+.profile{margin:0;padding:14px;background:#ffffffd9;border:1px solid white;border-radius:80px 24px 24px 24px;box-shadow:0 22px 65px #17658b16}
+.portrait{display:grid;place-items:center;aspect-ratio:1;overflow:hidden;border-radius:68px 15px 15px 15px;background:linear-gradient(135deg,#bde5fb,#e4f6ff)}
+.portrait img,.initials{grid-area:1/1;width:100%;height:100%}
+.portrait img{position:relative;object-fit:cover}
+.initials{display:grid;place-items:center;font-size:5rem;font-weight:800;color:var(--blue)}
+figcaption{text-align:center;padding:18px 8px 8px;color:var(--muted);font-size:.9rem}
+figcaption strong{display:block;color:var(--deep);font-size:1rem}
+section{padding:50px 0}
+.kicker{color:var(--blue);font-size:.8rem;font-weight:750;letter-spacing:.13em;text-transform:uppercase;margin-bottom:8px}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.3;letter-spacing:-.035em;margin:0 0 25px}
+h3{font-size:1.2rem;line-height:1.4;margin:0 0 12px}
+.about{max-width:880px;color:var(--muted);font-size:1.05rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.card{overflow:hidden;background:white;border:1px solid var(--line);border-radius:23px}
+.sky{background:#eaf6ff}
+.ice{background:#edf9fb}
+.card-body{padding:28px}
+.card p{color:var(--muted)}
+.category{color:var(--blue);font-size:.8rem;font-weight:750;margin-bottom:13px}
+.project-image{width:100%;height:auto;border-bottom:1px solid var(--line)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
+.tags span{padding:4px 11px;border:1px solid #c8dfec;border-radius:20px;background:#ffffffc9;color:#365d75;font-size:.85rem}
+.timeline{padding-left:26px;border-left:2px solid #b9dced}
+.job{padding:5px 0 30px}
+.job:last-child{padding-bottom:0}
+.date{color:var(--blue);font-size:.9rem;font-weight:700;margin-bottom:8px}
+.job p{max-width:850px;color:var(--muted)}
+.org-logo{width:140px;height:85px;object-fit:contain;background:white;border:1px solid var(--line);border-radius:12px;margin-bottom:16px;padding:7px}
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.skills p{margin-bottom:0}
+.distinction{border:2px solid #96c9e7;background:linear-gradient(140deg,#e4f3ff,white)}
+.grade{font-size:clamp(3rem,7vw,4.5rem);font-weight:800;line-height:1.1;letter-spacing:-.05em;color:var(--blue);margin:18px 0 8px}
+.honours{font-weight:750;color:var(--deep)!important}
+.contact{text-align:center;margin:30px 0 50px;padding:50px 25px;border-radius:30px;background:linear-gradient(120deg,#d8efff,#e1f8fa)}
+.contact p{max-width:640px;margin:0 auto 18px;color:var(--muted)}
+.contact .actions{justify-content:center}
+.email{overflow-wrap:anywhere;font-weight:700}
+footer{text-align:center;padding:0 20px 28px;color:var(--muted);font-size:.85rem}
+.skip{position:absolute;top:-100px;left:10px;padding:12px;background:white;z-index:10}
+.skip:focus{top:10px}
+@media(max-width:850px){
+  .hero{gap:30px}.skills{grid-template-columns:1fr}
+  .nav-right{gap:12px;justify-content:flex-end}
 }
-.languages button {
-  min-width: 44px;
-  min-height: 40px;
-  border: 0;
-  border-radius: 22px;
-  background: transparent;
-  color: var(--blue);
-  cursor: pointer;
-  font-size: .85rem;
-  font-weight: 750;
+@media(max-width:650px){
+  nav{flex-direction:column;align-items:flex-start;gap:15px}
+  .nav-right{justify-content:space-between;width:100%}
+  .nav-links{gap:12px}
+  .hero{grid-template-columns:1fr;padding:30px 0 50px}
+  .profile{max-width:370px;width:100%;margin:auto}
+  .grid{grid-template-columns:1fr}
+  section{padding:35px 0}.card-body{padding:24px}
 }
-.languages button[aria-pressed="true"] { background: var(--blue); color: white; }
-.hero {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  align-items: center;
-  gap: 65px;
-  padding: 60px 0 85px;
-}
-.badge {
-  display: inline-block;
-  padding: 7px 15px;
-  border: 1px solid #b8d8e9;
-  border-radius: 30px;
-  background: #ffffffc9;
-  font-size: .85rem;
-  color: var(--blue);
-  font-weight: 650;
-}
-h1 {
-  margin: 25px 0;
-  font-size: clamp(2.8rem, 6vw, 4.7rem);
-  letter-spacing: -.05em;
-  line-height: 1.12;
-}
-h1 span { color: var(--blue); }
-.intro { color: var(--muted); font-size: 1.1rem; }
-.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
-.button {
-  display: inline-block;
-  padding: 11px 22px;
-  border: 1px solid var(--blue);
-  border-radius: 28px;
-  background: var(--blue);
-  color: white;
-  text-decoration: none;
-  font-weight: 650;
-}
-.button:hover { background: #0b527a; color: white; }
-.button.light { background: white; color: var(--blue); border-color: #bdd9e9; }
-.profile {
-  margin: 0;
-  padding: 14px;
-  background: #ffffffd9;
-  border: 1px solid white;
-  border-radius: 85px 24px 24px 24px;
-  box-shadow: 0 22px 65px #17658b16;
-}
-.portrait {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 1;
-  overflow: hidden;
-  border-radius: 72px 15px 15px 15px;
-  background: linear-gradient(135deg, #bde5fb, #e4f6ff);
-}
-.portrait img, .initials { grid-area: 1 / 1; width: 100%; height: 100%; }
-.portrait img { position: relative; object-fit: cover; }
-.initials {
-  display: grid;
-  place-items: center;
-  font-size: 5rem;
-  font-weight: 800;
-  letter-spacing: -.08em;
-  color: var(--blue);
-}
-figcaption { padding: 18px 8px 8px; text-align: center; color: var(--muted); font-size: .9rem; }
-figcaption strong { display: block; color: var(--deep); font-size: 1rem; }
-section { padding: 52px 0; }
-.kicker {
-  margin-bottom: 8px;
-  color: var(--blue);
-  text-transform: uppercase;
-  letter-spacing: .13em;
-  font-size: .8rem;
-  font-weight: 750;
-}
-h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.3; letter-spacing: -.035em; margin: 0 0 25px; }
-h3 { font-size: 1.2rem; line-height: 1.4; margin: 0 0 12px; }
-.about { max-width: 870px; color: var(--muted); font-size: 1.05rem; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.card { overflow: hidden; background: white; border: 1px solid var(--line); border-radius: 23px; }
-.sky { background: #eaf6ff; }
-.ice { background: #edf9fb; }
-.card-body { padding: 28px; }
-.card p { color: var(--muted); }
-.category { color: var(--blue); font-size: .8rem; font-weight: 750; margin-bottom: 13px; }
-.project-image { display: block; width: 100%; height: auto; border-bottom: 1px solid var(--line); }
-.tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 20px 0 0; }
-.tags span {
-  padding: 4px 11px;
-  border: 1px solid #c8dfec;
-  border-radius: 20px;
-  background: #ffffffc9;
-  color: #365d75;
-  font-size: .8rem;
-}
-.timeline { padding-left: 26px; border-left: 2px solid #b9dced; }
-.job { padding: 5px 0 30px; }
-.job:last-child { padding-bottom: 0; }
-.date { color: var(--blue); font-size: .85rem; font-weight: 700; margin-bottom: 8px; }
-.job p { max-width: 850px; color: var(--muted); }
-.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.skills p { margin-bottom: 0; }
-.contact {
-  text-align: center;
-  margin: 30px 0 50px;
-  padding: 50px 25px;
-  border-radius: 30px;
-  background: linear-gradient(120deg, #d8efff, #e1f8fa);
-}
-.contact p { max-width: 640px; margin: 0 auto 18px; color: var(--muted); }
-.contact .actions { justify-content: center; }
-.email { overflow-wrap: anywhere; font-weight: 700; }
-footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-size: .85rem; }
-.skip { position: absolute; top: -100px; left: 10px; padding: 12px; background: white; z-index: 10; }
-.skip:focus { top: 10px; }
-@media (max-width: 850px) {
-  .hero { gap: 30px; }
-  .skills { grid-template-columns: 1fr; }
-  .nav-right { gap: 12px; justify-content: flex-end; }
-}
-@media (max-width: 650px) {
-  nav { flex-direction: column; align-items: flex-start; gap: 15px; }
-  .nav-right { justify-content: space-between; width: 100%; }
-  .nav-links { gap: 12px; }
-  .hero { grid-template-columns: 1fr; padding: 30px 0 55px; }
-  .profile { max-width: 370px; width: 100%; margin: auto; }
-  .grid { grid-template-columns: 1fr; }
-  section { padding: 35px 0; }
-  .card-body { padding: 24px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
-
 <body>
 <a class="skip" href="#main" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
 
@@ -229,7 +132,7 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
         <a href="#about" data-fr="À propos" data-en="About">À propos</a>
         <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
         <a href="#experience" data-fr="Expériences" data-en="Experience">Expériences</a>
-        <a href="#contact">Contact</a>
+        <a href="#education" data-fr="Formation" data-en="Education">Formation</a>
       </div>
       <div class="languages" role="group" aria-label="Langue / Language">
         <button type="button" data-lang="fr" lang="fr" aria-label="Français" aria-pressed="true">FR</button>
@@ -240,26 +143,25 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
 
   <div class="hero">
     <div>
-      <div class="badge" data-fr="Informatique · Business Intelligence · Finance" data-en="Software · Business Intelligence · Finance">
-        Informatique · Business Intelligence · Finance
-      </div>
+      <div class="badge" data-fr="Informatique · Business Intelligence · Finance" data-en="Software · Business Intelligence · Finance">Informatique · Business Intelligence · Finance</div>
       <h1>Wael<br><span>Mokaddem.</span></h1>
-      <p class="intro"
-        data-fr="Élève ingénieur en informatique financière, titulaire d’une licence en Business Intelligence. J’aime transformer les données en outils d’analyse et en applications utiles."
-        data-en="Financial Computing engineering student with a bachelor’s degree in Business Intelligence. I enjoy turning data into analytical tools and useful applications.">
-        Élève ingénieur en informatique financière, titulaire d’une licence en Business Intelligence. J’aime transformer les données en outils d’analyse et en applications utiles.
-      </p>
+      <p class="intro" data-fr="Élève ingénieur en informatique financière, titulaire d’une licence en Business Intelligence. J’aime transformer les données en outils d’analyse et en applications utiles." data-en="Financial Computing engineering student with a bachelor’s degree in Business Intelligence. I enjoy turning data into analytical tools and useful applications.">Élève ingénieur en informatique financière, titulaire d’une licence en Business Intelligence. J’aime transformer les données en outils d’analyse et en applications utiles.</p>
+
       <div class="actions">
         <a class="button" href="#projects" data-fr="Découvrir mes projets" data-en="Explore my projects">Découvrir mes projets</a>
-        <a class="button light" href="mailto:mokaddemwael@gmail.com" data-fr="Me contacter" data-en="Get in touch">Me contacter</a>
+        <a class="button light" href="mailto:mokaddemwael@gmail.com" data-fr="Me contacter" data-en="Contact me">Me contacter</a>
+      </div>
+
+      <div class="grade-banner">
+        <strong>17/20</strong>
+        <span data-fr="Moyenne de licence · Très Bien avec félicitations du jury · Esprit School of Business" data-en="Bachelor’s degree average · Highest honours with congratulations from the jury · Esprit School of Business">Moyenne de licence · Très Bien avec félicitations du jury · Esprit School of Business</span>
       </div>
     </div>
 
     <figure class="profile">
       <div class="portrait">
         <span class="initials" aria-hidden="true">WM</span>
-        <img src="wael.png" alt="Wael Mokaddem" width="800" height="800"
-          fetchpriority="high" onerror="this.hidden=true">
+        <img src="profile.png" alt="Wael Mokaddem" width="400" height="400" fetchpriority="high" onerror="this.hidden=true">
       </div>
       <figcaption>
         <strong data-fr="Développer. Analyser. Comprendre." data-en="Build. Analyse. Understand.">Développer. Analyser. Comprendre.</strong>
@@ -275,16 +177,8 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
   <div class="kicker" data-fr="Mon parcours" data-en="My background">Mon parcours</div>
   <h2 data-fr="Des données aux solutions concrètes." data-en="From data to practical solutions.">Des données aux solutions concrètes.</h2>
   <div class="about">
-    <p
-      data-fr="Mon parcours associe business intelligence, développement web et informatique financière. Après une licence obtenue à Esprit School of Business, je poursuis un cycle ingénieur à ESPRIT, dans la spécialité InFinI."
-      data-en="My background combines business intelligence, web development and financial computing. After completing my bachelor’s degree at Esprit School of Business, I continued into the engineering programme at ESPRIT, specialising in InFinI.">
-      Mon parcours associe business intelligence, développement web et informatique financière. Après une licence obtenue à Esprit School of Business, je poursuis un cycle ingénieur à ESPRIT, dans la spécialité InFinI.
-    </p>
-    <p
-      data-fr="Mes expériences chez Banque de Tunisie, Wevioo et BIAT Assurances m’ont permis de travailler sur l’analyse des besoins, les entrepôts de données, les tableaux de bord, les modèles prédictifs et l’automatisation documentaire."
-      data-en="My experience at Banque de Tunisie, Wevioo and BIAT Assurances covers requirements analysis, data warehouses, dashboards, predictive modelling and document automation.">
-      Mes expériences chez Banque de Tunisie, Wevioo et BIAT Assurances m’ont permis de travailler sur l’analyse des besoins, les entrepôts de données, les tableaux de bord, les modèles prédictifs et l’automatisation documentaire.
-    </p>
+    <p data-fr="Mon parcours associe business intelligence, développement web et informatique financière. Après une licence obtenue à Esprit School of Business, je poursuis un cycle ingénieur à ESPRIT, dans la spécialité InFinI." data-en="My background combines business intelligence, web development and financial computing. After completing my bachelor’s degree at Esprit School of Business, I continued into the engineering programme at ESPRIT, specialising in InFinI.">Mon parcours associe business intelligence, développement web et informatique financière. Après une licence obtenue à Esprit School of Business, je poursuis un cycle ingénieur à ESPRIT, dans la spécialité InFinI.</p>
+    <p data-fr="Mes expériences chez Banque de Tunisie, Wevioo et BIAT Assurances couvrent l’analyse des besoins, les entrepôts de données, les tableaux de bord, les modèles prédictifs et l’automatisation documentaire." data-en="My experience at Banque de Tunisie, Wevioo and BIAT Assurances covers requirements analysis, data warehouses, dashboards, predictive modelling and document automation.">Mes expériences chez Banque de Tunisie, Wevioo et BIAT Assurances couvrent l’analyse des besoins, les entrepôts de données, les tableaux de bord, les modèles prédictifs et l’automatisation documentaire.</p>
   </div>
 </section>
 
@@ -295,121 +189,57 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
 
     <article class="card sky">
       <div class="card-body">
-        <div class="category" data-fr="FINTECH · PROJET EN ÉQUIPE" data-en="FINTECH · TEAM PROJECT">FINTECH · PROJET EN ÉQUIPE</div>
+        <div class="category" data-fr="FINTECH · GESTION DES CRÉDITS" data-en="FINTECH · CREDIT MANAGEMENT">FINTECH · GESTION DES CRÉDITS</div>
         <h3>CrediGuard</h3>
-        <p
-          data-fr="Participation à un projet fintech académique associant une application web, la gestion des utilisateurs et des fonctionnalités de scoring et de segmentation."
-          data-en="Contributed to an academic fintech team project combining a web application, user management, and scoring and segmentation features.">
-          Participation à un projet fintech académique associant une application web, la gestion des utilisateurs et des fonctionnalités de scoring et de segmentation.
-        </p>
+        <p data-fr="Plateforme fintech développée en équipe pour accompagner le cycle de vie du crédit, de la demande au remboursement." data-en="A team-developed fintech platform supporting the credit lifecycle, from loan application to repayment.">Plateforme fintech développée en équipe pour accompagner le cycle de vie du crédit, de la demande au remboursement.</p>
+        <p><strong data-fr="Ma contribution : " data-en="My contribution: ">Ma contribution : </strong><span data-fr="développement du module de gestion des crédits." data-en="development of the credit management module.">développement du module de gestion des crédits.</span></p>
+        <p data-fr="Profilage des emprunteurs, demandes de prêt, évaluation des risques assistée par IA, décision de crédit, suivi de l’utilisation des fonds et gestion des remboursements." data-en="Borrower profiling, loan applications, AI-powered risk assessment, credit decisions, fund utilisation tracking and repayment management.">Profilage des emprunteurs, demandes de prêt, évaluation des risques assistée par IA, décision de crédit, suivi de l’utilisation des fonds et gestion des remboursements.</p>
         <div class="tags">
           <span>Fintech</span>
-          <span data-fr="Application web" data-en="Web application">Application web</span>
-          <span>Machine Learning</span>
-        </div>
-      </div>
-    </article>
-    <article class="card sky">
-  <img class="project-image"
-    src="malah-padel.png"
-    alt="Malah Padel"
-    loading="lazy"
-    onerror="this.hidden=true">
-
-  <div class="card-body">
-    <div class="category"
-      data-fr="DÉVELOPPEMENT WEB · PROJET EN ÉQUIPE"
-      data-en="WEB DEVELOPMENT · TEAM PROJECT">
-      DÉVELOPPEMENT WEB · PROJET EN ÉQUIPE
-    </div>
-
-    <h3>Malah Padel</h3>
-
-    <p
-      data-fr="Application web de gestion d’un club de padel : terrains, réservations, événements, équipes et équipements, avec un espace utilisateur et un backoffice."
-      data-en="A padel club management web application covering courts, bookings, events, teams and equipment, with a user area and an administration backoffice.">
-      Application web de gestion d’un club de padel : terrains,
-      réservations, événements, équipes et équipements,
-      avec un espace utilisateur et un backoffice.
-    </p>
-
-    <p>
-      <strong data-fr="Ma contribution : " data-en="My contribution: ">
-        Ma contribution :
-      </strong>
-      <span
-        data-fr="développement des modules de gestion des utilisateurs et des événements."
-        data-en="development of the user and event management modules.">
-        développement des modules de gestion des utilisateurs et des événements.
-      </span>
-    </p>
-
-    <div class="tags">
-      <span>PHP</span>
-      <span>Symfony 6.4</span>
-      <span>Doctrine ORM</span>
-      <span>MySQL</span>
-      <span>Twig</span>
-      <span>Bootstrap</span>
-    </div>
-  </div>
-</article>
-
-    <article class="card ice">
-      <img class="project-image" src="auralis.png" alt="Auralis"
-        loading="lazy" onerror="this.hidden=true">
-      <div class="card-body">
-        <div class="category" data-fr="ENTREPREN’UP · 3ᵉ PLACE" data-en="ENTREPREN’UP · THIRD PLACE">ENTREPREN’UP · 3ᵉ PLACE</div>
-        <h3>Auralis</h3>
-        <p
-          data-fr="Projet réalisé en binôme avec Yassmine Megbli, autour de l’intelligence artificielle et des risques financiers, associant business intelligence et cybersécurité."
-          data-en="A project developed with Yassmine Megbli around artificial intelligence and financial risk, bringing together business intelligence and cybersecurity.">
-          Projet réalisé en binôme avec Yassmine Megbli, autour de l’intelligence artificielle et des risques financiers, associant business intelligence et cybersécurité.
-        </p>
-        <p data-fr="Le projet a obtenu la troisième place à Entrepren’Up." data-en="The project earned third place at Entrepren’Up.">
-          Le projet a obtenu la troisième place à Entrepren’Up.
-        </p>
-        <div class="tags">
-          <span>AI</span><span>Business Intelligence</span>
-          <span data-fr="Risques financiers" data-en="Financial risk">Risques financiers</span>
+          <span data-fr="Gestion des crédits" data-en="Credit management">Gestion des crédits</span>
+          <span data-fr="Évaluation des risques" data-en="Risk assessment">Évaluation des risques</span>
         </div>
       </div>
     </article>
 
     <article class="card">
+      <img class="project-image" src="malah-padel.png" alt="Malah Padel" loading="lazy" onerror="this.hidden=true">
       <div class="card-body">
-        <div class="category" data-fr="BIAT ASSURANCES · PROJET DE STAGE" data-en="BIAT ASSURANCES · INTERNSHIP PROJECT">BIAT ASSURANCES · PROJET DE STAGE</div>
-        <h3 data-fr="Tarification automobile" data-en="Motor insurance pricing">Tarification automobile</h3>
-        <p
-          data-fr="Analyse de données de production et de sinistres couvrant 2019–2023 pour la tarification automobile Tous Risques."
-          data-en="Analysed policy and claims data covering 2019–2023 to support comprehensive motor insurance pricing.">
-          Analyse de données de production et de sinistres couvrant 2019–2023 pour la tarification automobile Tous Risques.
-        </p>
-        <p
-          data-fr="Préparation des données, construction d’une base police-année, analyse des expositions, modélisation de la fréquence par GLM de Poisson et backtesting."
-          data-en="Prepared data, constructed a policy-year dataset, analysed exposure, modelled claims frequency with a Poisson GLM and performed backtesting.">
-          Préparation des données, construction d’une base police-année, analyse des expositions, modélisation de la fréquence par GLM de Poisson et backtesting.
-        </p>
-        <div class="tags">
-          <span>Python</span><span>Pandas</span><span>GLM</span><span>CRISP-DM</span><span>Excel</span>
-        </div>
+        <div class="category" data-fr="DÉVELOPPEMENT WEB · PROJET EN ÉQUIPE" data-en="WEB DEVELOPMENT · TEAM PROJECT">DÉVELOPPEMENT WEB · PROJET EN ÉQUIPE</div>
+        <h3>Malah Padel</h3>
+        <p data-fr="Application web de gestion d’un club de padel : terrains, réservations, événements, équipes et équipements, avec un espace utilisateur et un backoffice." data-en="A padel club management web application covering courts, bookings, events, teams and equipment, with a user area and an administration backoffice.">Application web de gestion d’un club de padel : terrains, réservations, événements, équipes et équipements, avec un espace utilisateur et un backoffice.</p>
+        <p><strong data-fr="Ma contribution : " data-en="My contribution: ">Ma contribution : </strong><span data-fr="développement des modules de gestion des utilisateurs et des événements." data-en="development of the user and event management modules.">développement des modules de gestion des utilisateurs et des événements.</span></p>
+        <div class="tags"><span>PHP</span><span>Symfony 6.4</span><span>Doctrine ORM</span><span>MySQL</span><span>Twig</span><span>Bootstrap</span></div>
+      </div>
+    </article>
+
+    <article class="card ice">
+      <img class="project-image" src="auralis.png" alt="Auralis" loading="lazy" onerror="this.hidden=true">
+      <div class="card-body">
+        <div class="category" data-fr="ENTREPREN’UP · 3ᵉ PLACE" data-en="ENTREPREN’UP · THIRD PLACE">ENTREPREN’UP · 3ᵉ PLACE</div>
+        <h3>Auralis</h3>
+        <p data-fr="Projet réalisé en binôme avec Yassmine Megbli, autour de l’intelligence artificielle et des risques financiers, associant business intelligence et cybersécurité." data-en="A project developed with Yassmine Megbli around artificial intelligence and financial risk, bringing together business intelligence and cybersecurity.">Projet réalisé en binôme avec Yassmine Megbli, autour de l’intelligence artificielle et des risques financiers, associant business intelligence et cybersécurité.</p>
+        <p data-fr="Le projet a obtenu la troisième place à Entrepren’Up." data-en="The project earned third place at Entrepren’Up.">Le projet a obtenu la troisième place à Entrepren’Up.</p>
+        <div class="tags"><span>AI</span><span>Business Intelligence</span><span data-fr="Risques financiers" data-en="Financial risk">Risques financiers</span></div>
       </div>
     </article>
 
     <article class="card sky">
       <div class="card-body">
+        <div class="category" data-fr="BIAT ASSURANCES · PROJET DE STAGE" data-en="BIAT ASSURANCES · INTERNSHIP PROJECT">BIAT ASSURANCES · PROJET DE STAGE</div>
+        <h3 data-fr="Tarification automobile" data-en="Motor insurance pricing">Tarification automobile</h3>
+        <p data-fr="Analyse de données de production et de sinistres couvrant 2019–2023 pour la tarification automobile Tous Risques." data-en="Analysed policy and claims data covering 2019–2023 to support comprehensive motor insurance pricing.">Analyse de données de production et de sinistres couvrant 2019–2023 pour la tarification automobile Tous Risques.</p>
+        <p data-fr="Préparation des données, construction d’une base police-année, analyse des expositions, modélisation de la fréquence par GLM de Poisson et backtesting." data-en="Prepared data, constructed a policy-year dataset, analysed exposure, modelled claims frequency with a Poisson GLM and performed backtesting.">Préparation des données, construction d’une base police-année, analyse des expositions, modélisation de la fréquence par GLM de Poisson et backtesting.</p>
+        <div class="tags"><span>Python</span><span>Pandas</span><span>GLM</span><span>CRISP-DM</span><span>Excel</span></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
         <div class="category" data-fr="BANQUE DE TUNISIE · PROJET DE FIN D’ÉTUDES" data-en="BANQUE DE TUNISIE · GRADUATION PROJECT">BANQUE DE TUNISIE · PROJET DE FIN D’ÉTUDES</div>
         <h3 data-fr="Analyse et prévision des dépôts bancaires" data-en="Bank deposit analysis and forecasting">Analyse et prévision des dépôts bancaires</h3>
-        <p
-          data-fr="Conception d’une solution data pour suivre et analyser les dépôts bancaires : entrepôt de données, tableaux de bord interactifs et modèles prédictifs."
-          data-en="Designed a data solution to monitor and analyse bank deposits, including a data warehouse, interactive dashboards and predictive models.">
-          Conception d’une solution data pour suivre et analyser les dépôts bancaires : entrepôt de données, tableaux de bord interactifs et modèles prédictifs.
-        </p>
-        <p
-          data-fr="Analyse des besoins métiers et développement d’une application web avec des fonctionnalités interactives."
-          data-en="Analysed business requirements and developed a web application with interactive features.">
-          Analyse des besoins métiers et développement d’une application web avec des fonctionnalités interactives.
-        </p>
+        <p data-fr="Conception d’une solution data pour le suivi des dépôts bancaires : entrepôt de données, tableaux de bord interactifs et modèles prédictifs." data-en="Designed a data solution for monitoring bank deposits, including a data warehouse, interactive dashboards and predictive models.">Conception d’une solution data pour le suivi des dépôts bancaires : entrepôt de données, tableaux de bord interactifs et modèles prédictifs.</p>
+        <p data-fr="Analyse des besoins métiers et développement d’une application web avec des fonctionnalités interactives." data-en="Analysed business requirements and developed a web application with interactive features.">Analyse des besoins métiers et développement d’une application web avec des fonctionnalités interactives.</p>
         <div class="tags"><span>Business Intelligence</span><span>Data Warehouse</span><span>Forecasting</span></div>
       </div>
     </article>
@@ -418,16 +248,8 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
       <div class="card-body">
         <div class="category" data-fr="WEVIOO · AUTOMATISATION" data-en="WEVIOO · AUTOMATION">WEVIOO · AUTOMATISATION</div>
         <h3 data-fr="Génération documentaire dynamique" data-en="Dynamic document generation">Génération documentaire dynamique</h3>
-        <p
-          data-fr="Développement d’API pour alimenter automatiquement des modèles Word et PowerPoint à partir de données JSON."
-          data-en="Developed APIs to automatically populate Word and PowerPoint templates from JSON data.">
-          Développement d’API pour alimenter automatiquement des modèles Word et PowerPoint à partir de données JSON.
-        </p>
-        <p
-          data-fr="Validation et transformation des données, intégration de bibliothèques documentaires et contribution à l’interface front-end."
-          data-en="Validated and transformed data, integrated document libraries and contributed to the frontend interface.">
-          Validation et transformation des données, intégration de bibliothèques documentaires et contribution à l’interface front-end.
-        </p>
+        <p data-fr="Développement d’API pour alimenter automatiquement des modèles Word et PowerPoint à partir de données JSON." data-en="Developed APIs to automatically populate Word and PowerPoint templates from JSON data.">Développement d’API pour alimenter automatiquement des modèles Word et PowerPoint à partir de données JSON.</p>
+        <p data-fr="Validation et transformation des données, intégration de bibliothèques documentaires et contribution à l’interface front-end." data-en="Validated and transformed data, integrated document libraries and contributed to the frontend interface.">Validation et transformation des données, intégration de bibliothèques documentaires et contribution à l’interface front-end.</p>
         <div class="tags"><span>API</span><span>JSON</span><span>DOCX</span><span>PPTX</span></div>
       </div>
     </article>
@@ -440,31 +262,20 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
   <h2 data-fr="Expériences professionnelles" data-en="Professional experience">Expériences professionnelles</h2>
   <div class="timeline">
     <article class="job">
+      <img class="org-logo" src="biat.webp" alt="Assurances BIAT" width="140" height="85" loading="lazy" onerror="this.hidden=true">
       <div class="date" data-fr="Été 2026" data-en="Summer 2026">Été 2026</div>
       <h3 data-fr="BIAT Assurances · Stage Data Science & Actuariat" data-en="BIAT Assurances · Data Science & Actuarial Intern">BIAT Assurances · Stage Data Science &amp; Actuariat</h3>
-      <p
-        data-fr="Travail sur la préparation des données et la modélisation actuarielle en assurance automobile : fréquence des sinistres, expositions, facteurs de risque et tarification prospective."
-        data-en="Worked on data preparation and actuarial modelling for motor insurance, covering claims frequency, exposure, risk factors and prospective pricing.">
-        Travail sur la préparation des données et la modélisation actuarielle en assurance automobile : fréquence des sinistres, expositions, facteurs de risque et tarification prospective.
-      </p>
+      <p data-fr="Préparation des données et modélisation actuarielle en assurance automobile : fréquence des sinistres, expositions, facteurs de risque et tarification prospective." data-en="Data preparation and actuarial modelling for motor insurance, covering claims frequency, exposure, risk factors and prospective pricing.">Préparation des données et modélisation actuarielle en assurance automobile : fréquence des sinistres, expositions, facteurs de risque et tarification prospective.</p>
     </article>
     <article class="job">
       <div class="date" data-fr="Juillet – Septembre 2025" data-en="July – September 2025">Juillet – Septembre 2025</div>
       <h3 data-fr="Wevioo · Stage développeur" data-en="Wevioo · Developer Intern">Wevioo · Stage développeur</h3>
-      <p
-        data-fr="Développement d’API et automatisation de modèles Word et PowerPoint à partir de données JSON. Collaboration avec l’équipe sur une interface front-end."
-        data-en="Developed APIs and automated Word and PowerPoint templates using JSON data. Collaborated with the team on a frontend interface.">
-        Développement d’API et automatisation de modèles Word et PowerPoint à partir de données JSON. Collaboration avec l’équipe sur une interface front-end.
-      </p>
+      <p data-fr="Développement d’API et automatisation de modèles Word et PowerPoint à partir de données JSON. Collaboration avec l’équipe sur une interface front-end." data-en="Developed APIs and automated Word and PowerPoint templates using JSON data. Collaborated with the team on a frontend interface.">Développement d’API et automatisation de modèles Word et PowerPoint à partir de données JSON. Collaboration avec l’équipe sur une interface front-end.</p>
     </article>
     <article class="job">
       <div class="date" data-fr="Février – Juillet 2024" data-en="February – July 2024">Février – Juillet 2024</div>
       <h3 data-fr="Banque de Tunisie · Stage de fin d’études" data-en="Banque de Tunisie · Graduation Internship">Banque de Tunisie · Stage de fin d’études</h3>
-      <p
-        data-fr="Analyse fonctionnelle, spécification des besoins et conception d’une solution d’analyse et de prévision des dépôts bancaires."
-        data-en="Conducted functional analysis, specified requirements and designed a solution for bank deposit analysis and forecasting.">
-        Analyse fonctionnelle, spécification des besoins et conception d’une solution d’analyse et de prévision des dépôts bancaires.
-      </p>
+      <p data-fr="Analyse fonctionnelle, spécification des besoins et conception d’une solution d’analyse et de prévision des dépôts bancaires." data-en="Conducted functional analysis, specified requirements and designed a solution for bank deposit analysis and forecasting.">Analyse fonctionnelle, spécification des besoins et conception d’une solution d’analyse et de prévision des dépôts bancaires.</p>
     </article>
   </div>
 </section>
@@ -475,15 +286,11 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
   <div class="skills">
     <article class="card"><div class="card-body">
       <h3 data-fr="Développement & données" data-en="Development & data">Développement &amp; données</h3>
-      <p>Python, SQL, PHP, Node.js, React, API, JSON.</p>
+      <p>Python, SQL, PHP, Symfony, Node.js, React, API, JSON.</p>
     </div></article>
     <article class="card"><div class="card-body">
       <h3>Data Science</h3>
-      <p
-        data-fr="Analyse exploratoire, prétraitement, statistiques, séries temporelles, machine learning, LSTM, GRU, NLP et web scraping."
-        data-en="Exploratory analysis, preprocessing, statistics, time series, machine learning, LSTM, GRU, NLP and web scraping.">
-        Analyse exploratoire, prétraitement, statistiques, séries temporelles, machine learning, LSTM, GRU, NLP et web scraping.
-      </p>
+      <p data-fr="Analyse exploratoire, prétraitement, statistiques, séries temporelles, machine learning, LSTM, GRU, NLP et web scraping." data-en="Exploratory analysis, preprocessing, statistics, time series, machine learning, LSTM, GRU, NLP and web scraping.">Analyse exploratoire, prétraitement, statistiques, séries temporelles, machine learning, LSTM, GRU, NLP et web scraping.</p>
     </div></article>
     <article class="card"><div class="card-body">
       <h3 data-fr="BI & méthodes" data-en="BI & methods">BI &amp; méthodes</h3>
@@ -493,27 +300,31 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
 </section>
 
 <section id="education">
-  <div class="kicker" data-fr="Formation" data-en="Education">Formation</div>
+  <div class="kicker" data-fr="Formation & réussite académique" data-en="Education & academic achievement">Formation &amp; réussite académique</div>
   <h2 data-fr="Un parcours entre informatique et finance" data-en="A background in technology and finance">Un parcours entre informatique et finance</h2>
   <div class="grid">
-    <article class="card sky"><div class="card-body">
-      <div class="category">ESPRIT</div>
-      <h3 data-fr="Cycle ingénieur · InFinI" data-en="Engineering programme · InFinI">Cycle ingénieur · InFinI</h3>
-      <p data-fr="Études d’ingénieur en informatique financière." data-en="Engineering studies specialising in Financial Computing.">Études d’ingénieur en informatique financière.</p>
-    </div></article>
-
-    <article class="card"><div class="card-body">
-      <div class="category">ESPRIT SCHOOL OF BUSINESS · 2021–2024</div>
-      <h3 data-fr="Licence · Business Intelligence" data-en="Bachelor’s degree · Business Intelligence">Licence · Business Intelligence</h3>
-      <p data-fr="Business Information Systems. Mention Très Bien avec félicitations du jury — moyenne de 17/20."
-         data-en="Business Information Systems. Graduated with highest honours and congratulations from the jury — average grade: 17/20.">
-        Business Information Systems. Mention Très Bien avec félicitations du jury — moyenne de 17/20.
-      </p>
-    </div></article>
+    <article class="card sky">
+      <div class="card-body">
+        <img class="org-logo" src="esprit.jpg" alt="ESPRIT" width="140" height="85" loading="lazy" onerror="this.hidden=true">
+        <div class="category">ESPRIT</div>
+        <h3 data-fr="Cycle ingénieur · InFinI" data-en="Engineering programme · InFinI">Cycle ingénieur · InFinI</h3>
+        <p data-fr="Études d’ingénieur en informatique financière." data-en="Engineering studies specialising in Financial Computing.">Études d’ingénieur en informatique financière.</p>
+      </div>
+    </article>
+    <article class="card distinction">
+      <div class="card-body">
+        <div class="category">ESPRIT SCHOOL OF BUSINESS · 2021–2024</div>
+        <h3 data-fr="Licence · Business Intelligence" data-en="Bachelor’s degree · Business Intelligence">Licence · Business Intelligence</h3>
+        <p>Business Information Systems</p>
+        <div class="grade">17/20</div>
+        <p data-fr="Moyenne de licence" data-en="Bachelor’s degree average">Moyenne de licence</p>
+        <p class="honours" data-fr="Mention Très Bien avec félicitations du jury" data-en="Highest honours with congratulations from the jury">Mention Très Bien avec félicitations du jury</p>
+      </div>
+    </article>
   </div>
 </section>
 
-<section id="languages">
+<section id="spoken-languages">
   <h2 data-fr="Langues" data-en="Languages">Langues</h2>
   <div class="tags">
     <span data-fr="Arabe · langue maternelle" data-en="Arabic · Native">Arabe · langue maternelle</span>
@@ -526,15 +337,11 @@ footer { padding: 0 20px 28px; text-align: center; color: var(--muted); font-siz
 <section class="contact" id="contact">
   <div class="kicker" data-fr="Échangeons" data-en="Let’s connect">Échangeons</div>
   <h2 data-fr="Un projet ou une opportunité ?" data-en="A project or an opportunity?">Un projet ou une opportunité ?</h2>
-  <p
-    data-fr="Je serais ravi d’échanger autour du développement logiciel, de la business intelligence, de la data science et de la finance."
-    data-en="I would be happy to discuss software development, business intelligence, data science and finance.">
-    Je serais ravi d’échanger autour du développement logiciel, de la business intelligence, de la data science et de la finance.
-  </p>
+  <p data-fr="Je serais ravi d’échanger autour du développement logiciel, de la business intelligence, de la data science et de la finance." data-en="I would be happy to discuss software development, business intelligence, data science and finance.">Je serais ravi d’échanger autour du développement logiciel, de la business intelligence, de la data science et de la finance.</p>
   <a class="email" href="mailto:mokaddemwael@gmail.com">mokaddemwael@gmail.com</a>
   <div class="actions">
-    <a class="button" href="https://github.com/waelmokaddem">GitHub</a>
-    <a class="button light" href="mailto:mokaddemwael@gmail.com" data-fr="M’écrire" data-en="Email me">M’écrire</a>
+    <a class="button" href="mailto:mokaddemwael@gmail.com" data-fr="Me contacter" data-en="Contact me">Me contacter</a>
+    <a class="button light" href="https://github.com/waelmokaddem">GitHub</a>
   </div>
 </section>
 </main>
@@ -558,8 +365,8 @@ function setLanguage(language) {
 
   document.querySelector('meta[name="description"]').content =
     lang === "fr"
-      ? "Wael Mokaddem — Portfolio en développement, business intelligence, data science et finance."
-      : "Wael Mokaddem — Software development, business intelligence, data science and finance portfolio.";
+      ? "Wael Mokaddem — Développement, Business Intelligence, data science et finance."
+      : "Wael Mokaddem — Software development, Business Intelligence, data science and finance.";
 
   try {
     localStorage.setItem("wael-language", lang);
